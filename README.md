@@ -1,3 +1,6 @@
+[![Docker Hub](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/lipen/docker-bumblebee)
+
+
 # BumbleBEE on Docker
 
 **BEE** (**B**en-Gurion University **E**qui-propagation **E**ncoder) is a compiler which enables to encode finite domain constraint problems to CNF.
