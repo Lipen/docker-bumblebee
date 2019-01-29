@@ -1,0 +1,11 @@
+--- satSolverInterface.pl.orig	2019-01-29 10:54:03.289940583 +0300
++++ satSolverInterface.pl	2019-01-29 11:22:29.313232193 +0300
+@@ -17,7 +17,7 @@
+ %:- load_foreign_library('../satsolver/pl-glucose4',install).
+ 
+ loadSat:-
+-    load_foreign_library('./pl-satsolver',install).
++    load_foreign_library('/usr/lib/pl-satsolver',install).
+ 
+ satSolverNewSolver:-!,
+     minisat_new_solver.
