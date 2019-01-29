@@ -1,13 +1,14 @@
 FROM swipl:latest AS build
 
-RUN apt-get update && \
-    apt-get install --no-install-recommends -y \
+RUN apt-get update \
+ && apt-get install --no-install-recommends -y \
     wget \
     unzip \
     make \
     g++ \
     patch \
-    && rm -rf /var/lib/apt/lists/*
+    dos2unix \
+ && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /bee
 
@@ -26,6 +27,7 @@ RUN (cd satsolver/prologinterface \
  && rm -rf satsolver/glucose-4 satsolver/prologinterface
 
 RUN (cd beeSolver \
+ &&  dos2unix satSolverInterface.pl \
  &&  patch -p0 satSolverInterface.pl < ../fix-load_foreign_library.patch \
  &&  make)
 
