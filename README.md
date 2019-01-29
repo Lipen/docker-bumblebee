@@ -22,7 +22,7 @@ docker pull lipen/bumblebee
 ### Run
 
 ```sh
-docker run --rm -v $PWD:/input bumblebee example.bee
+docker run --rm -v $PWD:/input lipen/bumblebee example.bee
 ```
 
 ### Example input/output
