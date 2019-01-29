@@ -11,10 +11,21 @@ For any further details visit [BEE home page](http://amit.metodi.me/research/bee
 
 ## Usage
 
+### Build or pull
+
 ```sh
 docker build -t bumblebee .
+## OR
+docker pull lipen/bumblebee
+```
+
+### Run
+
+```sh
 docker run --rm -v $PWD:/input bumblebee example.bee
 ```
+
+### Example input/output
 
 ```
 ## <<example.bee>>                <<BumbleBEE output>>
