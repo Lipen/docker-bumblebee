@@ -1,5 +1,5 @@
 [![Docker Hub](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/lipen/bumblebee)
-
+[![Docker Hub](https://images.microbadger.com/badges/image/lipen/bumblebee.svg)](https://hub.docker.com/r/lipen/bumblebee)
 
 # BumbleBEE on Docker
 
